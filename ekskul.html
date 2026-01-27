@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <p onmouseenter="ubah()" id="tulisan"> ubah </p>
+    <script>
+     //DOM itu adalah document object model
+     function ubah() {
+        let body = document.getElementById("body");
+        body.style.color = "violet";
+        body.style.fontsize = "20px";
+        let tulisan = document.getElementById("tulisan");
+       tulisan.innerHTML = "prabroro";
+     }
+    </script>
+</body>
+</html>
