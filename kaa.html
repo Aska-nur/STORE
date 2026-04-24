@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    const products = [{
+        img: "matcha",
+        name: "matcha",
+        desc: "matcha stroberi",
+        price: 20000
+
+    },
+    {
+        img: "cake",
+        name: "cake",
+        desc: "cake vanilla",
+        price: 25000
+    }]
+      
+      tampil = products.map((produk) => {
+        return  `
+        <div class="card">
+            <img src="${produk.img}"/>
+            <div class="card-title">${produk.name}</div>
+            <div class="card-body">${produk.desc}</div>
+            <h3>${produk.price}</h3>
+            <button id= "beli">beli</button>
+            `;
+       });
+           document.write(tampil);
+      
+</script>
+</body>
+</html>
